@@ -36,9 +36,5 @@ class MainActivity : AppCompatActivity() {
             // _TODO (04) Show a Toast when the OnClickListener is called
             Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
         }
-
-
-
     }
-
 }
