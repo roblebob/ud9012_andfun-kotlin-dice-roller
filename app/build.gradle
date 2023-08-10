@@ -20,9 +20,14 @@ apply plugin: 'kotlin-android'
 
 //apply plugin: 'kotlin-android-extensions'
 
+
+kotlin {
+    jvmToolchain(17)
+}
+
 android {
     namespace = "com.example.android.diceroller"
-    compileSdk 32
+    compileSdk 33
     defaultConfig {
         applicationId "com.example.android.diceroller"
         minSdk 30
@@ -45,7 +50,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha11'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.5.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
